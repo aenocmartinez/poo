@@ -1,0 +1,17 @@
+{
+    "name": "enoc/poo",
+    "description": "Programacion Orientada a Objetos",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Poo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abimelecmartinez",
+            "email": "enoc.martinez@pulzo.com"
+        }
+    ],
+    "require": {}
+}
