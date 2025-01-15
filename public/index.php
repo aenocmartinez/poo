@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,6 @@
         <button type="button" id="enviarBtn">Calcular Valor Salud</button>
     </form>
 
-    <!-- Etiqueta para mostrar el resultado -->
     <p id="resultado"></p>
 
     <script>
@@ -22,15 +21,13 @@
                 const salarioMinimo = $('#input_salario_minimo').val();
                 const resultado = $('#resultado');
 
-                // Realizar la solicitud AJAX con jQuery
                 $.ajax({
-                    url: 'server.php', // URL del archivo PHP
-                    method: 'POST', // Método HTTP
+                    url: 'server.php', 
+                    method: 'POST',
                     data: {
                         input_salario_minimo: salarioMinimo
                     },
                     success: function (response) {
-                        // Mostrar la respuesta del servidor en el <p id="resultado">
                         resultado.html(response);
                     },
                     error: function (xhr, status, error) {
