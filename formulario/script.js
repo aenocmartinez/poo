@@ -55,6 +55,7 @@ $(document).ready(function(){
             url:'procesar.php',
             method: 'POST',
             data: datos,
+            // succes se ejecutará si la solicitud del servidor fue exitosa
             success: function(response){
                 console.log(response);// Verificar la respuesta del servidor, response: Contiene la respuesta del servidor (por ejemplo, "Datos guardados correctamente").
                 cargarDatos();// Cargar datos actualizados en la tabla
