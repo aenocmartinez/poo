@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-if ( isset($_GET['valorSalud'])) {
+if ( isset($_GET['valorSalud'])) {0
     echo "<p>VALOR SALUD: " . $_GET['valorSalud'] . "</p>";
 }
 

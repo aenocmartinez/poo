@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0px 0px 0px;
+}
+
+.div-form {
+    width: 300px;
+}
+form {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+input {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    transition: border-color 0.3s ease;
+    padding: 10px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3498db transparent;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+.table {
+    margin-top: 100px;
+}
+
+/* Estilo para el encabezado */
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilo para la tabla */
+#tablaResultado {
+    width: 80%;
+    margin: 0 auto; /* Centrar la tabla */
+    border-collapse: collapse; /* Eliminar espacio entre bordes */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para las cabeceras */
+#tablaResultado thead th {
+    background-color: #3498db; /* Fondo verde */
+    color: white; /* Texto blanco */
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para las filas */
+#tablaResultado tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Fondo gris claro para filas impares */
+}
+
+#tablaResultado tbody tr:nth-child(even) {
+    background-color: #fff; /* Fondo blanco para filas pares */
+}
+
+/* Estilo para las celdas */
+#tablaResultado tbody td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Bordes grises */
+    text-align: left;
+}
+
+/* Estilo al pasar el ratón por una fila */
+#tablaResultado tbody tr:hover {
+    background-color: #d1f0d1; /* Fondo verde claro */
+    cursor: pointer;
+}
