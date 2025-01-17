@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     // Evento para enviar el formulario
     $('#formulario').submit(function(e){
         e.preventDefault();
@@ -37,4 +37,49 @@ $(document).ready(function(){
         $(formulario)[0].reset();
     }
 
+});*/
+
+$(document).ready(function(){
+    // Creo evento para enviar el formulario
+    $("#formulario").submit(function(e){
+        e.preventDefault();
+
+        // capturo los datos
+        const datos ={
+            nombre:$('#nombre').val(),
+            email:$('#email').val()
+        };
+
+        // Envio los datos del form con AJAX
+        $.ajax({
+            url:'procesar.php',
+            method: 'POST',
+            data: datos,
+            success: function(response){
+                console.log(response);// Verificar la respuesta del servidor, response: Contiene la respuesta del servidor (por ejemplo, "Datos guardados correctamente").
+                cargarDatos();// Cargar datos actualizados en la tabla
+                limpiarFormulario('#formulario');// Limpiar el formulario
+            },
+            error: function(){
+                alert('Error al procesar la solicitud.');
+            }
+        });
+
+    });
+
+    // función para cargar los datos desde la base de datos
+    function cargarDatos(){
+        $.ajax({
+            url:'cargar.php',
+            method:'POST',
+            success: function(response){// response: Contiene las filas en formato HTML generadas por cargar.php.
+                $('#tablaResultado tbody').html(response);//Actualizar la tabla
+            },
+            error: function(){
+                alert('Error al cargar los datos');
+            }
+        });
+    }
+
+    cargarDatos();
 });

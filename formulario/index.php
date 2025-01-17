@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Capturar</title>
 </head>
 <body>
-    <div class="div-form">
+    <div class="div-form" method="POST">
         <form action="" id="formulario">
             <label for="nombre">Nombre: </label>
             <br>
