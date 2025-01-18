@@ -6,8 +6,8 @@ $(document).ready(function(){
         // event.preventDefault(): Evita que el formulario realice su comportamiento predeterminado, que sería recargar la página al enviarse.
 
         // obtener los valos ingresados en los campos de mi form
-        var numero1 = $("#numero1").val();
-        var numero2 = $("#numero2").val();
+        let numero1 = $("#numero1").val();
+        let numero2 = $("#numero2").val();
 
         // $("#numero1").val(): Obtiene el valor ingresado en el campo de entrada con el atributo id="numero1".
 
