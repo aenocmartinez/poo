@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){//Indica que el metodo para el enviar e
 
     // Verificamos que los campos no estén vacios
     if (!empty($nombre) && !empty($email)){
-        $stmt = $conexion->prepare("INSERT INTO `form-registro` (nombre,email) VALUES (?, ?");// Consulta para prevenir ataques de inyeccion SQL
+        $stmt = $conexion->prepare("INSERT INTO `form-registro` (nombre,email) VALUES (?, ?)");// Consulta para prevenir ataques de inyeccion SQL
         // INSERT INTO: Especifica que queremos insertar datos en la tabla form-registro.
         // ?: Marcadores de posición para los valores que se insertarán.
 

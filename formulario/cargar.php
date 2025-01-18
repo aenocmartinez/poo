@@ -10,7 +10,7 @@ $conexion = new mysqli($servername, $username, $password, $dbname);
 if ($conexion->connect_error) {
     die('Error de conexión: ' . $conexion->connect_error);
 }
-echo'conexion exitosa';
+
 
 $query = "SELECT nombre, email FROM `form-registro`";
 $resultado = $conexion->query($query);

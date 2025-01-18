@@ -82,5 +82,11 @@ $(document).ready(function(){
         });
     }
 
+    // Función limpiar el formulario
+    
+    
+
     cargarDatos();
 });
+
+

@@ -8,11 +8,11 @@
     <title>Capturar</title>
 </head>
 <body>
-    <div class="div-form" method="POST">
-        <form action="" id="formulario">
+    <div class="div-form" >
+        <form action="" id="formulario" method="POST">
             <label for="nombre">Nombre: </label>
             <br>
-            <input type="text" id="nombre" name="email" placeholder="Nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             <br>
 
             <label for="email">Email: </label>
